@@ -1,0 +1,129 @@
+/* ========================================
+  Box Sizing
+======================================== */
+
+html {
+box-sizing : border-box;
+}
+
+*, *:before, *:after {
+box-sizing : inherit;
+}
+
+/* ===================
+    GENERAL STYLES
+====================== */
+
+* {
+ font-family: 'Open-Sans', sans-serif;   
+}
+
+body {
+    margin: 0 auto;
+    background: #fff;
+}
+
+.captions {
+    background: #fff;
+    border-top: 5px;
+    border-style: solid;
+    border-color: #fff;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #37393d;
+}
+
+mejs__player {
+    width: 100%;
+    height: 100%;
+}
+
+#video_container {
+    width: 100%;
+    margin-bottom: 25px;
+    max-width: 900px;
+}
+
+.captions {
+    line-height: 25px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 25px 0 25px;
+    max-width: 900px; 
+}
+
+*:focus {
+	outline: none;
+}
+
+/* ===================
+    CONTROL STYLES
+====================== */
+
+.mejs__container {
+    background-color: #000;
+}
+
+.mejs__overlay-button {
+    opacity: .35;
+}
+
+.mejs__overlay-button:hover {
+    opacity: .70;
+}
+
+.mejs__time-current,
+.mejs__time-handle-content {
+    background: #ffc966;
+}
+
+.mejs__controls:not([style*="display: none"]) {
+    background: rgba(36, 23, 34, 0.90);
+}
+
+/* ===================
+    PROGRESS BAR
+====================== */
+
+.highlight {
+  color: orange;
+}
+
+/* ===================
+    CAPTION STYLES
+====================== */
+
+.captions span:hover {
+  cursor: pointer;
+  color: #676b73;
+}
+
+.captions span[class*="highlight"]:hover {
+  color: #ffc966;
+}
+
+/* =======================
+    MEDIA QUERIES
+========================== */
+
+@media screen and (min-width: 768px) {
+    
+body {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    
+#video_container {
+    margin: 30px auto 0 auto;
+    width: 70%;
+}
+    
+.captions {
+    width: 70%;
+    padding: 0 15px;
+} 
+    }
